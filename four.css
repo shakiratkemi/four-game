@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: azure;
+  height: 100vh;
+  font-family: "Playfair Display", serif;
+  font-size: 40px;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  font-size: 40px;
+  margin-top: 15px;
+  background: linear-gradient(
+    to right,
+    rgb(232, 85, 44),
+    rgb(224, 76, 150),
+    rgb(210, 70, 237),
+    rgb(92, 69, 217)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.winner {
+  background: linear-gradient(
+    to right,
+    rgb(232, 85, 44),
+    rgb(224, 76, 150),
+    rgb(210, 70, 237),
+    rgb(92, 69, 217)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.board {
+  background-color: blue;
+  margin-top: 10px;
+  width: 400px;
+  height: 400px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px rgba(12, 156, 246, 0.3);
+}
+.reset {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 10px;
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid rgb(252, 194, 194);
+  background-color: rgb(252, 194, 194);
+  color: blue;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.reset:hover,
+.reset:active {
+  background-color: blue;
+  color: azure;
+}
+
+.row {
+  display: flex;
+}
+
+.circle {
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border-radius: 50%;
+  margin: 15px 5px 10px 10px;
+}
